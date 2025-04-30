@@ -1,13 +1,27 @@
+import java.util.Scanner;
+
 public class App {
+
         public static void main(String[] args) {
-            int primeiroTermo = 0;  // Você pode alterar o valor inicial se quiser
-            int razao = 7;
-            int quantidadeTermos = 10;
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("Qual será o primeiro termo da PA:");
+            int primeiroTermo = sc.nextInt();
+
+            System.out.print("E qual será a razão:");
+            int razao = sc.nextInt();
+            
+            System.out.print("Por fim, quantos elementos devem ser exibidos:");
+            int quantidadeTermos = sc.nextInt();
     
-            System.out.println("Progressão Aritmética (PA) de razão 7 com 10 termos:");
+            System.out.println("Progressão Aritmética (PA) de razão " + razao + " com" + quantidadeTermos + " termos, iniciando de " + primeiroTermo + ":");
+
             for (int i = 0; i < quantidadeTermos; i++) {
+
                 int termo = primeiroTermo + i * razao;
                 System.out.print(termo + " ");
+
             }
         }
 
