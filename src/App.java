@@ -23,7 +23,7 @@ public class App {
                 System.out.print(termo + " ");
 
             }
-        }
 
-    
+            sc.close();
+        }
 }
